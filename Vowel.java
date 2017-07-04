@@ -10,7 +10,7 @@ public static void main(String args[]) throws IOException
 		}
 	else
 	{
-		System.out.println("Not a Vowel");
+		System.out.println("Consonant");
 	}
 	
 	
