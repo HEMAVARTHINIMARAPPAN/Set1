@@ -10,5 +10,6 @@ for (int i=1;i<=x;i++)
 {
 fact = fact*i;
 }
+  System.out.println(fact);
 }
 }
