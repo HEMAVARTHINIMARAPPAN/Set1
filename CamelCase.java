@@ -1,5 +1,5 @@
 import java.io.*;
-public class CamelCas
+public class CamelCase
 {
 public static void main(String args[])throws IOException
 {
