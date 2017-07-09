@@ -9,8 +9,7 @@ int count =0;
 for(int i=x;i<=y;i++)
 {
 if(i%2 != 0)
-count++;
+System.out.println(i);
 }
-System.out.println(count);
 }
 }
