@@ -1,20 +1,28 @@
 import java.io.*;
-public class LeastNum
-{
-public static void main(String args[])throws IOException
-{
+import java.util.*;
+public class LeastNum{
+public static void main(String[] args) throws IOException{
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-Integer x = Integer.parseInt(br.readLine());
-Integer l=Integer.toString(x).length();
-String str = x.toString();
-System.out.println("How many digits you want to delete");
-Integer n = Integer.parseInt(br.readLine());
-String str1 = str.substring((l-n),l);
-String str2 = str.substring(0,(l-n));
-Integer integers = Integer.parseInt(str2);
-Integer result = integers-1;
-System.out.println(result);
-
-
+Integer n,i,p,sub;
+String ns,str="";		
+ArrayList<Integer> list = new ArrayList<Integer>();
+System.out.println("Enter");
+n = Integer.parseInt(br.readLine());
+while(n>9){
+sub = n%10;
+n =n/ 10;
+list.add(sub);
 }
+if(n>=0)
+list.add(n);
+Collections.sort(list);
+for(Integer inte : list)
+str += inte.toString();
+System.out.println(str);
+System.out.println("Deleting num");
+p = Integer.parseInt(br.readLine());
+System.out.println(str.substring(0,str.length()-p));
+				
+	}
+
 }
