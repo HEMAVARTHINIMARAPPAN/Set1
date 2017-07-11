@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class IntegerInArrayEqualsIndex {
+public class DisplayIntegerInArrayEqualsIndex {
 	public static void main(String args[])throws IOException
 	{
 	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
