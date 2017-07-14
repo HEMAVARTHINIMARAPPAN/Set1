@@ -14,16 +14,12 @@ public class DisplayIntegerInArrayEqualsIndex {
 		Collections.sort(list);
 	}
 	System.out.println(list);
-	System.out.println("Enter the Index");
-	index = Integer.parseInt(br.readLine());
-	if(index>=n)
-		System.out.println("No Element");
-	else
-	System.out.println(list.get(index));
-	
-
-
-	
+		for(int j=0;j<n;j++)
+		{
+			if(list.get(j) == j)
+				System.out.println(list.get(j));
+//		        else
+//				System.out.println("No Element");					
+		}
 	}
-
 }
